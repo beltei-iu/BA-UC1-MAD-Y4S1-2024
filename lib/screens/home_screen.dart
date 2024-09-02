@@ -90,26 +90,26 @@ class _HomeScreenState extends State<HomeScreen> {
             )
           ],
         ),
-        body: Column(
+        body: ListView(
           children: <Widget>[
             _buildCarouselSliderWidget(imageSliders),
             _buildSlideItem(imageSlideList),
             _buildLanguageSwitchWidget
-            // _buildMenuTitleWidget,
-            // _buildMenuListWidget
           ],
         )
     );
   }
 
   Widget get _buildLanguageSwitchWidget {
-    final khmer = ElevatedButton(
-      child: Text("Khmer"),
+    final khmer = IconButton(
+      icon: Image.asset("assets/images/khmer.png"),
       onPressed: (){
         final provider = Provider.of<LanguageProvider>(context, listen: false);
         provider.changeLanguage(Locale("km"));
       },);
-    final english = ElevatedButton(child: Text("English"),onPressed: (){
+    final english = IconButton(
+      icon: Image.asset("assets/images/english.png"),
+      onPressed: (){
       final provider = Provider.of<LanguageProvider>(context, listen: false);
       provider.changeLanguage(Locale("en"));
     },);
