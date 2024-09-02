@@ -4,7 +4,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mad2/localization/localization_delegate.dart';
 import 'package:mad2/provider/language_provider.dart';
 import 'package:mad2/routes.dart';
-import 'package:mad2/screens/home_page.dart';
 import 'package:mad2/screens/home_screen.dart';
 import 'package:mad2/screens/splash_screen.dart';
 import 'package:provider/provider.dart';

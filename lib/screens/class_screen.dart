@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mad2/localization/app_localization.dart';
 
 class ClassScreen extends StatefulWidget {
   const ClassScreen({super.key});
@@ -15,15 +16,14 @@ class _ClassScreenState extends State<ClassScreen> {
   @override
   Widget build(BuildContext context) {
 
-    SnackBar snackBar = SnackBar(content: Text("Welcome"));
-
-    Dialog dialog = Dialog(
-      child: Text("Welcome"),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(AppLocalization.of(context)!.translate(LocKey.classroom.name)),
+        elevation: 5,
+      ),
+      body: Center(
+        child: Text("No Data"),
+      ),
     );
-    final okDialog =  showDialog(context: context, builder: (BuildContext context) {
-      return dialog;
-    });
-
-    return const Placeholder();
   }
 }

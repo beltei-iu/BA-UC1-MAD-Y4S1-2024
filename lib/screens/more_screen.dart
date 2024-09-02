@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:mad2/localization/app_localization.dart';
 import 'package:mad2/routes.dart';
 
-class MorePage extends StatefulWidget {
-  const MorePage({super.key});
+class MoreScreen extends StatefulWidget {
+  const MoreScreen({super.key});
 
   @override
-  State<MorePage> createState() => _MorePageState();
+  State<MoreScreen> createState() => _MoreScreenState();
 }
 
-class _MorePageState extends State<MorePage> {
+class _MoreScreenState extends State<MoreScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
