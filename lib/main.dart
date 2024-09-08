@@ -8,28 +8,30 @@ import 'package:mad2/screens/home_screen.dart';
 import 'package:mad2/screens/splash_screen.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   LanguageProvider languageProvider = LanguageProvider();
-  languageProvider.fetchLanguage();
-  runApp(const MyApp());
+  await languageProvider.fetchLanguage();
+  runApp(MyApp(languageProvider: languageProvider,));
 }
 
 class MyApp extends StatelessWidget {
 
-  const MyApp({super.key});
+  LanguageProvider languageProvider;
+
+  MyApp({super.key, required this.languageProvider});
 
   @override
   Widget build(BuildContext context) {
 
     final provider = ChangeNotifierProvider(
-      create: (context) => LanguageProvider(),
+      create: (context) => languageProvider,
       builder: (context, child) {
 
         final language = Provider.of<LanguageProvider>(context);
 
         return MaterialApp(
-            title: 'MAD',
+            title: 'UC1-MAD-II',
             theme: ThemeData(
                 colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF018AAA)),
                 useMaterial3: false,
