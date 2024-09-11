@@ -12,18 +12,20 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   LanguageProvider languageProvider = LanguageProvider();
   languageProvider.fetchLanguage();
-  runApp(const MyApp());
+  runApp(MyApp(languageProvider: languageProvider,));
 }
 
 class MyApp extends StatelessWidget {
 
-  const MyApp({super.key});
+  LanguageProvider languageProvider;
+
+   MyApp({super.key, required this.languageProvider});
 
   @override
   Widget build(BuildContext context) {
 
     final provider = ChangeNotifierProvider(
-      create: (context) => LanguageProvider(),
+      create: (context) => languageProvider,
       builder: (context, child) {
 
         final language = Provider.of<LanguageProvider>(context);
