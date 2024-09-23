@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "1027220963414",
+    "project_id": "beltei",
+    "storage_bucket": "beltei.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027220963414:android:27867160a6f59b758f7bf7",
+        "android_client_info": {
+          "package_name": "kh.edu.beltei.mad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027220963414-a8h21nimj2viu6ko5acvdt9td6o3cjsl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kh.edu.beltei.mad",
+            "certificate_hash": "5ebae0085f59aa3a503641e0ee7f1846fac3583c"
+          }
+        },
+        {
+          "client_id": "1027220963414-k0i126g752udt8t51itvedlkj56en4kc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7zBVe3DmhLcoaTbK0y58wiGXw4LgZuWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027220963414-k0i126g752udt8t51itvedlkj56en4kc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1027220963414-6hls0n1m074ot1vqrgum21cvb6ngf6c0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mad2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027220963414:android:6480de35b95ca4508f7bf7",
+        "android_client_info": {
+          "package_name": "kh.edu.betlei.mad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027220963414-k0i126g752udt8t51itvedlkj56en4kc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7zBVe3DmhLcoaTbK0y58wiGXw4LgZuWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027220963414-k0i126g752udt8t51itvedlkj56en4kc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1027220963414-6hls0n1m074ot1vqrgum21cvb6ngf6c0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mad2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,25 +1,28 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:mad2/firebase_options.dart';
 import 'package:mad2/localization/localization_delegate.dart';
 import 'package:mad2/provider/language_provider.dart';
 import 'package:mad2/routes.dart';
-import 'package:mad2/screens/home_screen.dart';
-import 'package:mad2/screens/splash_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform
+  );
   LanguageProvider languageProvider = LanguageProvider();
   await languageProvider.fetchLanguage();
-  runApp(MyApp(languageProvider: languageProvider,));
+  runApp(App(languageProvider: languageProvider,));
 }
 
-class MyApp extends StatelessWidget {
+class App extends StatelessWidget {
 
   LanguageProvider languageProvider;
 
-  MyApp({super.key, required this.languageProvider});
+  App({super.key, required this.languageProvider});
 
   @override
   Widget build(BuildContext context) {

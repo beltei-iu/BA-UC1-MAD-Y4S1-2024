@@ -4,6 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:mad2/provider/language_provider.dart';
+import 'package:mad2/utils/app_colors.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -94,7 +95,8 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             _buildCarouselSliderWidget(imageSliders),
             _buildSlideItem(imageSlideList),
-            _buildLanguageSwitchWidget
+            _buildLanguageSwitchWidget,
+            _sloganTextRow
           ],
         )
     );
@@ -165,6 +167,24 @@ class _HomeScreenState extends State<HomeScreen> {
         );
       }).toList(),
     );
+  }
+
+  Widget get _sloganTextRow{
+
+    final msgText = Container(
+        height: 80,
+        width: MediaQuery.of(context).size.width,
+        color: AppColor.appColor,
+        child: Center(child: Text("អនាគតភាពជាអ្នកដឹកនាំ", style: TextStyle(color: Colors.white, fontSize: 18),))
+    );
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        msgText
+      ],
+    );
+
   }
 
 }

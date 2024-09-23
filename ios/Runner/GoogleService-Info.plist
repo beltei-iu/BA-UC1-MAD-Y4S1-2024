@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1027220963414-ml0m11g2d442c06a3bp7i2mfqh79t21o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1027220963414-ml0m11g2d442c06a3bp7i2mfqh79t21o</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1027220963414-a8h21nimj2viu6ko5acvdt9td6o3cjsl.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC5tftCQAFSXhNGvlhoq4sAKeyWfXl_L24</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1027220963414</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kh.edu.beltei.mad.uc2</string>
+	<key>PROJECT_ID</key>
+	<string>beltei</string>
+	<key>STORAGE_BUCKET</key>
+	<string>beltei.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1027220963414:ios:82699271f413c8458f7bf7</string>
+</dict>
+</plist>

@@ -3,7 +3,6 @@ import 'package:http/http.dart' as http;
 
 class ArticleService {
 
-
   Future<List<Map<String,dynamic>>> getArticles() async{
     String apiUrl = "https://api.example.com/article";
     final response = await http.get(Uri.parse(apiUrl));

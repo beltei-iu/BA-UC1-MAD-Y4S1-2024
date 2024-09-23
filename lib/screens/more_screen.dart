@@ -28,6 +28,15 @@ class _MoreScreenState extends State<MoreScreen> {
                 Navigator.pushNamed(context, RouteGenerator.languagePage);
               },
             ),
+          ),
+          Card(
+            child: ListTile(
+              leading: Icon(Icons.account_circle),
+              title: Text("Account"),
+              onTap: (){
+                Navigator.pushNamed(context, RouteGenerator.loginScreen);
+              },
+            ),
           )
         ],
       ),
