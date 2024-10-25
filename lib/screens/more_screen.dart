@@ -16,6 +16,7 @@ class _MoreScreenState extends State<MoreScreen> {
       appBar: AppBar(
         title: Text(AppLocalization.of(context)!.translate(LocKey.more.name)),
         elevation: 5,
+        centerTitle: true,
       ),
       body: ListView(
         children: [
@@ -25,7 +26,7 @@ class _MoreScreenState extends State<MoreScreen> {
               leading: Icon(Icons.language),
               title: Text(AppLocalization.of(context)!.translate(LocKey.language.name)),
               onTap: (){
-                Navigator.pushNamed(context, RouteGenerator.languagePage);
+                Navigator.pushNamed(context, RouteGenerator.languageScreen);
               },
             ),
           ),
@@ -34,7 +35,9 @@ class _MoreScreenState extends State<MoreScreen> {
               leading: Icon(Icons.account_circle),
               title: Text("Account"),
               onTap: (){
-                Navigator.pushNamed(context, RouteGenerator.loginScreen);
+                // if logined => account screen
+                // else => login screen
+                Navigator.pushNamed(context, RouteGenerator.accountScreen);
               },
             ),
           )

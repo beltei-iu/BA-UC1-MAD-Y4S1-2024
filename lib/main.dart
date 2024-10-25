@@ -30,9 +30,7 @@ class App extends StatelessWidget {
     final provider = ChangeNotifierProvider(
       create: (context) => languageProvider,
       builder: (context, child) {
-
         final language = Provider.of<LanguageProvider>(context);
-
         return MaterialApp(
             title: 'UC1-MAD-II',
             theme: ThemeData(
@@ -40,11 +38,9 @@ class App extends StatelessWidget {
                 useMaterial3: false,
                 primaryColor: const Color(0xFF018AAA)
             ),
-
             initialRoute: RouteGenerator.splashScreen,
             onGenerateRoute: RouteGenerator.generateRoute,
             navigatorKey: RouteGenerator.key,
-
             locale: language.appLocal,
             supportedLocales: [
               Locale("en","US"),

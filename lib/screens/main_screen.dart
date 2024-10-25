@@ -28,7 +28,7 @@ class _MainScreenState extends State<MainScreen> {
       items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: AppLocalization.of(context)!.translate(LocKey.home.name),),
         BottomNavigationBarItem(icon: Icon(Icons.class_rounded), label: AppLocalization.of(context)!.translate(LocKey.classroom.name)),
-        BottomNavigationBarItem(icon: Icon(Icons.more), label: AppLocalization.of(context)!.translate(LocKey.more.name))
+        BottomNavigationBarItem(icon: Icon(Icons.more_horiz_sharp), label: AppLocalization.of(context)!.translate(LocKey.more.name))
       ],
       unselectedFontSize: 14,
       selectedFontSize: 16,

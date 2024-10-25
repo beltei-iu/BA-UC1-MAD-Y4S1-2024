@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 width: MediaQuery.of(context).size.width,
                 height: 40,
                 child: ElevatedButton(onPressed: (){
-                  RouteGenerator.key.currentState?.pushReplacementNamed(RouteGenerator.homePage);
+                  RouteGenerator.key.currentState?.pushReplacementNamed(RouteGenerator.mainScreen);
                 }, child: Text(AppLocalization.of(context)!.translate(LocKey.getStart.name)))),
           ),
           SizedBox(height: 10,)

@@ -98,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
         content: Text("Login successed"),
         actions: [
           TextButton(onPressed: (){
-            RouteGenerator.key.currentState!.pushReplacementNamed(RouteGenerator.homePage);
+            RouteGenerator.key.currentState!.pushReplacementNamed(RouteGenerator.mainScreen);
           }, child: Text("OK"))
         ],
       );

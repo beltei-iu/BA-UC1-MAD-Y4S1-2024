@@ -1,20 +1,24 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
+import 'package:mad2/screens/account_screen.dart';
+import 'package:mad2/screens/add_news_screen.dart';
 import 'package:mad2/screens/language_page.dart';
 import 'package:mad2/screens/login_screen.dart';
 import 'package:mad2/screens/main_screen.dart';
+import 'package:mad2/screens/news_screen.dart';
 import 'package:mad2/screens/register_screen.dart';
 import 'package:mad2/screens/splash_screen.dart';
 
 class RouteGenerator {
 
   static const String splashScreen = "/";
-  static const String homePage = "/homePage";
-  static const String languagePage = "/language";
-
+  static const String mainScreen = "/mainScreen";
+  static const String languageScreen = "/languageScreen";
   static const String registerScreen = "/registerScreen";
   static const String loginScreen = "/loginScreen";
+  static const String accountScreen = "/accountScreen";
+  static const String newsScreen = "/newsScreen";
+  static const String addNewsScreen = "/addNewsScreen";
 
   RouteGenerator._(){}
 
@@ -23,19 +27,22 @@ class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings){
     switch(settings.name){
       case splashScreen:
-          final route = MaterialPageRoute(builder: (BuildContext context) => SplashScreen());
-          return route;
-      case homePage:
-          final route = MaterialPageRoute(builder: (BuildContext context) => MainScreen());
-          return route;
-      case languagePage:
-        final route = MaterialPageRoute(builder: (BuildContext context) => LanguagePage());
-        return route;
+          return _createRoute(SplashScreen(), settings);
+      case mainScreen:
+          return _createRoute(MainScreen(), settings);
+      case languageScreen:
+        return _createRoute(LanguagePage(), settings);
       case loginScreen:
         return _createRoute(LoginScreen(), settings);
       case registerScreen:
         return _createRoute(RegisterScreen(), settings);
-      default:
+      case accountScreen:
+        return _createRoute(AccountScreen(), settings);
+      case newsScreen:
+        return _createRoute(NewsScreen(), settings);
+      case addNewsScreen:
+        return _createRoute(AddNewsScreen(), settings);
+        default:
         throw RouteException("Route not found");
     }
   }

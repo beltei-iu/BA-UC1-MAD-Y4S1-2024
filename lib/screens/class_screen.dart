@@ -11,8 +11,6 @@ class ClassScreen extends StatefulWidget {
 class _ClassScreenState extends State<ClassScreen> {
 
 
-
-
   @override
   Widget build(BuildContext context) {
 
@@ -20,6 +18,7 @@ class _ClassScreenState extends State<ClassScreen> {
       appBar: AppBar(
         title: Text(AppLocalization.of(context)!.translate(LocKey.classroom.name)),
         elevation: 5,
+        centerTitle: true,
       ),
       body: Center(
         child: Text("No Data"),

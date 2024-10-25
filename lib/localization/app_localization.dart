@@ -40,7 +40,7 @@ class AppLocalization {
   };
 
   Map<String,String>? _localizedStrings;
-// Option 2
+  // Option 2
   Future<bool> load() async {
     // Load file from JSON
     String jsonString = await rootBundle.loadString('assets/lang/${locale.languageCode}.json');

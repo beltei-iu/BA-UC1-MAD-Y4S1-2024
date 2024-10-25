@@ -22,6 +22,7 @@ class _LanguagePageState extends State<LanguagePage> {
       appBar: AppBar(
         title: Text(AppLocalization.of(context)!.translate(LocKey.language.name)),
         elevation: 5,
+        centerTitle: true,
       ),
       body: ListView(
         children: [
